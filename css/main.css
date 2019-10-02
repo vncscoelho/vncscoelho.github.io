@@ -1,3 +1,553 @@
-html,button,input,select,textarea{color:#222}html,body{height:100%}body{font-size:1em;line-height:1.4;font-family:"Yantramanav",Impact,sans-serif;color:white;overflow:hidden;background:black}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}img{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}.chromeframe{margin:.2em 0;background:#ccc;color:#000;padding:.2em 0}#texto{position:absolute;z-index:50;top:50%;margin-top:-300px;left:10%}.breve{color:white;font-size:9vh;line-height:3px;text-shadow:0 0 10px #222;text-transform:uppercase;line-height:.75em}@media screen and (max- width:800px){.breve{font-size:13vw}}.highl{font-size:2em}#contato{position:absolute;z-index:150;bottom:10%;left:10%}#contato a{display:inline-block;padding:0 37px 0 25px;margin:0 5px 5px 0;border-radius:5px;vertical-align:middle;color:#fff;text-decoration:none;background:#222}@media screen and (max-width:480px){#contato a{display:inline-block;padding:0 20px;margin:0 7px 10px 0;border-radius:5px;font-size:0;text-align:center;vertical-align:middle;color:#fff;text-decoration:none;background:#222}#texto{top:64%}.last{width:212px;font-size:18px!important;text- align:center}}#contato a:hover{background:#333}.ico{font-family:'Mono 
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
 
-Social Icons Font';font-size:45px;vertical-align:middle;margin-top:-3px;display:inline-block}@-webkit-keyframes noise{0%{opacity:0}100%{opacity:1}}@- webkit-keyframes faixa{0%{bottom:-600px}100%{bottom:110%}}@-moz-keyframes noise{0%{opacity:0}100%{opacity:1}}@- moz-keyframes faixa{0%{bottom:-600px}100%{bottom:110%}}@-ms-keyframes noise{0%{opacity:0}100%{opacity:1}}@-ms- keyframes faixa{0%{bottom:-600px}100%{bottom:110%}}@-o- keyframes noise{0%{opacity:0}100%{opacity:1}}@-o- keyframes faixa{0%{bottom:-600px}100%{bottom:110%}}@keyframes noise{0%{opacity:0}100%{opacity:1}}@keyframes faixa{0%{bottom:-600px}100%{bottom:110%}}#radial{width:100%;height:100%;background:url("../img/radial.png") no-repeat;background-size:100% 100%;position:absolute;z-index:99}#faixa{width:100%;height:400px;background:url("../img/faixa.png");position:absolute;z-index:50;-webkit-animation:faixa 3s linear infinite;-moz-animation:faixa 3s linear infinite;-o-animation:faixa 3s linear infinite;-ms-animation:faixa 3s linear infinite;animation:faixa 3s linear infinite}.bg{width:100%;height:100%;-webkit- animation:noise infinite;-moz-animation:noise infinite;-o-animation:noise infinite;-ms-animation:noise infinite;animation:noise infinite;position:absolute}#img1{background:url("../img/bg1.jpg");-webkit-animation-duration:0s;-o-animation- duration:0s;-ms-animation-duration:0s;-moz-animation-duration:0s;animation- duration:0s}.bg:nth-child(1){background:url("../img/bg2.jpg");-webkit-animation- duration:.5s;-o-animation-duration:.5s;-ms-animation-duration:.5s;-moz- animation-duration:.5s;animation-duration:.1s}.bg:nth-child(2){background:url("../img/bg3.jpg");-webkit-animation-duration:.15s;-o-animation-duration:.15s;-ms-animation-duration:.15s;-moz-animation-duration:.15s;animation-duration:.15s}.ir{background-color:transparent;border:0;overflow:hidden;*text-indent:-9999px}.ir:before{content:"";display:block;width:0;height:150%}.hidden{display:none!important;visibility:hidden}.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.invisible{visibility:hidden}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.clearfix{*zoom:1}@media print,(-o-min-device-pixel-ratio:5/@media print{*{background:transparent!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100%!important}@page{margin:.5cm}p,h2,h3{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
+html, body {
+    height: 100%;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: "Yantramanav", Impact, sans-serif;
+    color: white;
+    background: none;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+ ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+ img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+ fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+ textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+   .chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#texto {
+    display: flex;
+    align-items: center;
+    z-index: 99;
+    position: relative;
+    text-shadow: 0px 0px 10px #222;
+    text-transform: uppercase;
+    height: 100%;
+    padding: 0 5%;
+}  
+
+h2 {
+    padding-top: 50px;
+}
+
+.projetos {
+    color: white;
+    font-size: 8vw;
+    line-height: 1;
+    max-height: 100vh;
+}
+
+.projetos a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    transition: font-size .1s;
+    line-height: 8vw;
+}
+
+.projetos a span {
+    font-size: 30px;
+    line-height: 1em;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.projetos a:hover {
+    font-size: 1.1em;
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.wrapper {
+    max-height: 100vh;
+}
+
+.subtitulo {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#contato a {
+    display: inline-block;
+    padding: 15px 25px 15px 25px;
+    margin: 0px 5px 5px 0px;
+    border-radius: 5px;
+    vertical-align: middle;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(34, 34, 34, 0.6);
+    box-shadow: rgba(0,0,0,0.2) 0 6px 0;
+    transition: all .2s ease-in-out;
+}
+
+#contato a span {
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 480px) {
+
+    #contato {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #contato a{
+        flex-grow: 1;
+    }
+}
+
+#contato a:hover {
+    background: rgba(62, 62,62, 0.6);
+    box-shadow: rgba(0,0,0,0.2) 0 -6px 0;
+}
+
+@-webkit-keyframes noise {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@-webkit-keyframes faixa {
+    0%{
+        bottom: -600px;
+    }
+    100%{
+        bottom: 110%;
+    }
+}
+
+@-moz-keyframes noise {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@-moz-keyframes faixa {
+    0%{
+        bottom: -400px;
+    }
+    100%{
+        bottom: 400px;
+    }
+}
+
+@-ms-keyframes noise {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@-ms-keyframes faixa {
+    0%{
+        bottom: -600px;
+    }
+    100%{
+        bottom: 110%;
+    }
+}
+
+@-o-keyframes noise {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@-o-keyframes faixa {
+    0%{
+        bottom: -600px;
+    }
+    100%{
+        bottom: 110%;
+    }
+}
+
+@keyframes noise {
+
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@keyframes faixa {
+    0%{
+        bottom: -600px;
+    }
+    100%{
+        bottom: 110%;
+    }
+}
+
+#radial {
+    width: 100%;
+    height: 100%;
+    background: url("../img/scanlines.png") repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#faixa {
+    width: 100%;
+    height: 400px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6b6b6b+0,3d3d3d+100&0.25+0,0.25+100 */
+background: -moz-linear-gradient(top, rgba(107,107,107,0.25) 0%, rgba(61,61,61,0.25) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(107,107,107,0.25) 0%,rgba(61,61,61,0.25) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(107,107,107,0.25) 0%,rgba(61,61,61,0.25) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#406b6b6b', endColorstr='#403d3d3d',GradientType=0 ); /* IE6-9 */
+    position: fixed;
+    z-index: 50;
+    -webkit-animation: faixa 3s linear infinite;
+    -moz-animation: faixa 3s linear infinite;
+    -o-animation: faixa 3s linear infinite;
+    -ms-animation: faixa 3s linear infinite;
+    animation: faixa 3s linear infinite;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    -webkit-animation: noise infinite;
+    -moz-animation: noise infinite;
+    -o-animation: noise infinite;
+    -ms-animation: noise infinite;
+    animation: noise infinite;
+    position: fixed;
+    top: 0;
+    left: 0;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0.65+0,0.65+100 */
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.65) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.65) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(255,255,255,0.65) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6ffffff', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#img1{
+    background: url("../img/1.jpg");
+    -webkit-animation-duration: 0s;
+    -o-animation-duration: 0s;
+    -ms-animation-duration: 0s;
+    -moz-animation-duration: 0s;
+    animation-duration: 0s;
+}
+
+.bg:nth-child(1){
+    background: url("../img/2.jpg");
+    -webkit-animation-duration: 0.5s;
+    -o-animation-duration: 0.5s;
+    -ms-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    animation-duration: 0.1s;
+}
+
+.bg:nth-child(2){
+    background: url("../img/3.jpg");
+    -webkit-animation-duration: 0.15s;
+    -o-animation-duration: 0.15s;
+    -ms-animation-duration: 0.15s;
+    -moz-animation-duration: 0.15s;
+    animation-duration: 0.15s;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+ .ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+ .hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+ .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+ .visuallyhidden.focusable:active,
+ .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+ .invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+ .clearfix:before,
+ .clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+ .clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+   @media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+     .ir a:after,
+     a[href^="javascript:"]:after,
+     a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
